@@ -7,6 +7,7 @@
 //
 
 #import "NotesTableViewController.h"
+#import "NoteMapDetailViewController.h"
 
 @interface NotesTableViewController ()
 
@@ -28,7 +29,6 @@
 {
     [super viewDidLoad];
     notes = [[NSMutableArray alloc] init];
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -77,19 +77,21 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [notes removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+        
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
@@ -128,6 +130,14 @@
         AddNoteViewController *addNoteViewController = [[navigationController viewControllers] objectAtIndex:0];
         addNoteViewController.delegate = self;
     }
+    else if([segue.identifier isEqualToString:@"NoteDetail"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Note *note = [notes objectAtIndex:indexPath.row];
+        NoteMapDetailViewController *noteMapDetailViewController = segue.destinationViewController;
+        noteMapDetailViewController.tempTitle = [note title];
+        noteMapDetailViewController.tempNoteBody = [note noteBody];
+    }
 }
 
 - (void)addNoteViewControllerDidCancel:(AddNoteViewController *)controller
@@ -142,5 +152,7 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.notes count] - 1 inSection:0];
     [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
+
+
 
 @end

@@ -32,6 +32,7 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     [locationManager startUpdatingLocation];
+    [title becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

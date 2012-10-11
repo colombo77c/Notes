@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66BDBD6816264CFA0034CC92 /* 180-stickynote.png in Resources */ = {isa = PBXBuildFile; fileRef = 66BDBD6716264CFA0034CC92 /* 180-stickynote.png */; };
+		66BDBD6B16264D190034CC92 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 66BDBD6A16264D190034CC92 /* 07-map-marker.png */; };
 		66E223011624D398007DC1EE /* NoteMapDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E223001624D398007DC1EE /* NoteMapDetailViewController.m */; };
 		66E4C77B1623717E00DD1CE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E4C77A1623717E00DD1CE1 /* UIKit.framework */; };
 		66E4C77D1623717E00DD1CE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E4C77C1623717E00DD1CE1 /* Foundation.framework */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66BDBD6716264CFA0034CC92 /* 180-stickynote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180-stickynote.png"; sourceTree = "<group>"; };
+		66BDBD6A16264D190034CC92 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker.png"; sourceTree = "<group>"; };
 		66E222FF1624D397007DC1EE /* NoteMapDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteMapDetailViewController.h; sourceTree = "<group>"; };
 		66E223001624D398007DC1EE /* NoteMapDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteMapDetailViewController.m; sourceTree = "<group>"; };
 		66E4C7761623717E00DD1CE1 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +129,8 @@
 				66E4C7891623717E00DD1CE1 /* AppDelegate.h */,
 				66E4C78A1623717E00DD1CE1 /* AppDelegate.m */,
 				66E4C7921623717E00DD1CE1 /* MainStoryboard.storyboard */,
+				66BDBD6716264CFA0034CC92 /* 180-stickynote.png */,
+				66BDBD6A16264D190034CC92 /* 07-map-marker.png */,
 				66E222FF1624D397007DC1EE /* NoteMapDetailViewController.h */,
 				66E223001624D398007DC1EE /* NoteMapDetailViewController.m */,
 				66E4C7981623717E00DD1CE1 /* first.png */,
@@ -225,6 +231,8 @@
 				66E4C79B1623717E00DD1CE1 /* first@2x.png in Resources */,
 				66E4C7A01623717E00DD1CE1 /* second.png in Resources */,
 				66E4C7A21623717E00DD1CE1 /* second@2x.png in Resources */,
+				66BDBD6816264CFA0034CC92 /* 180-stickynote.png in Resources */,
+				66BDBD6B16264D190034CC92 /* 07-map-marker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
